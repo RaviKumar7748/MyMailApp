@@ -17,7 +17,7 @@ public class RaviMailService {
 	public boolean send(String to,String Subject,String text,String[] ccc,String[] bcc,Resource file) {
 		boolean flag=false;
 		MimeMessage message =sender.createMimeMessage();
-		
+		// comment here 
 		try {
 			MimeMessageHelper helper=new MimeMessageHelper(message,file!=null?true:false);
 			helper.setTo(to);
